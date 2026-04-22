@@ -1,1 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RAINBOW LOL</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
+        body {
+            background: black;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Arial Black', 'Impact', sans-serif;
+            overflow: hidden;
+        }
+
+        .rainbow-lol {
+            font-size: clamp(3rem, 15vw, 20rem);
+            font-weight: 900;
+            text-transform: uppercase;
+            text-align: center;
+            animation: rainbow 2s infinite linear;
+            letter-spacing: 0.1em;
+            text-shadow: 0 0 20px rgba(255,255,255,0.5);
+        }
+
+        @keyframes rainbow {
+            0%   { color: #ff0000; }
+            16%  { color: #ff8800; }
+            33%  { color: #ffff00; }
+            50%  { color: #00ff00; }
+            66%  { color: #0088ff; }
+            83%  { color: #8800ff; }
+            100% { color: #ff0000; }
+        }
+
+        /* Optional: add a subtle glow that changes with the text */
+        .rainbow-lol {
+            animation: rainbow 1.5s infinite ease-in-out;
+        }
+    </style>
+</head>
+<body>
+    <div class="rainbow-lol">LOL</div>
+</body>
+</html>
